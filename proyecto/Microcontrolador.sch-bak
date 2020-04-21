@@ -462,10 +462,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 2200 9350 2200
 Wire Wire Line
-	9350 2100 9650 2100
-Wire Wire Line
-	9650 1800 9350 1800
-Wire Wire Line
 	9350 1700 9650 1700
 $Comp
 L power:GND #PWR?
@@ -505,7 +501,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 5300 5250 5300
 Wire Wire Line
-	8750 1400 8750 1100
+	8750 1400 8750 1250
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E9CE6D3
@@ -546,4 +542,41 @@ $EndComp
 Wire Wire Line
 	4350 1450 4350 1700
 Connection ~ 4350 1700
+Wire Wire Line
+	8650 1400 8650 1250
+Wire Wire Line
+	8650 1250 8750 1250
+Connection ~ 8750 1250
+Wire Wire Line
+	8750 1250 8750 1100
+$Comp
+L Device:R R?
+U 1 1 5EA45BC4
+P 9700 2000
+F 0 "R?" V 9493 2000 50  0001 C CNN
+F 1 "510" V 9585 2000 50  0000 C CNN
+F 2 "" V 9630 2000 50  0001 C CNN
+F 3 "~" H 9700 2000 50  0001 C CNN
+	1    9700 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 2100 9650 2100
+Wire Wire Line
+	9350 1800 9650 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5EA4A411
+P 10050 2000
+F 0 "#PWR?" H 10050 1750 50  0001 C CNN
+F 1 "GND" V 10055 1872 50  0000 R CNN
+F 2 "" H 10050 2000 50  0001 C CNN
+F 3 "" H 10050 2000 50  0001 C CNN
+	1    10050 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 2000 9550 2000
+Wire Wire Line
+	10050 2000 9850 2000
 $EndSCHEMATC

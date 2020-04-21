@@ -169,17 +169,6 @@ F 3 "~" H 2200 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5EA12F42
-P 2200 2950
-F 0 "#PWR?" H 2200 2800 50  0001 C CNN
-F 1 "+3.3V" H 2215 3123 50  0000 C CNN
-F 2 "" H 2200 2950 50  0001 C CNN
-F 3 "" H 2200 2950 50  0001 C CNN
-	1    2200 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5EA0F0CB
 P 2200 4150
@@ -216,8 +205,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 3700 2200 3650
 Wire Wire Line
-	2200 2950 2200 3150
-Wire Wire Line
 	3600 3150 2200 3150
 Connection ~ 2200 3150
 Wire Wire Line
@@ -231,21 +218,8 @@ Wire Wire Line
 Connection ~ 2200 3650
 Wire Wire Line
 	2200 3650 2200 3550
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5EA2378A
-P 5250 2900
-F 0 "#PWR?" H 5250 2750 50  0001 C CNN
-F 1 "+3.3V" H 5265 3073 50  0000 C CNN
-F 2 "" H 5250 2900 50  0001 C CNN
-F 3 "" H 5250 2900 50  0001 C CNN
-	1    5250 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 3150 5250 3150
-Wire Wire Line
-	5250 3150 5250 2900
 Wire Wire Line
 	4300 4150 4300 4300
 Wire Wire Line
@@ -253,4 +227,30 @@ Wire Wire Line
 Connection ~ 4200 4300
 Wire Wire Line
 	4200 4300 4200 4400
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9F1326
+P 2200 2800
+F 0 "#PWR?" H 2200 2650 50  0001 C CNN
+F 1 "+5V" H 2215 2973 50  0000 C CNN
+F 2 "" H 2200 2800 50  0001 C CNN
+F 3 "" H 2200 2800 50  0001 C CNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9F1ADD
+P 5250 2850
+F 0 "#PWR?" H 5250 2700 50  0001 C CNN
+F 1 "+5V" H 5265 3023 50  0000 C CNN
+F 2 "" H 5250 2850 50  0001 C CNN
+F 3 "" H 5250 2850 50  0001 C CNN
+	1    5250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2850 5250 3150
+Wire Wire Line
+	2200 2800 2200 3150
 $EndSCHEMATC
