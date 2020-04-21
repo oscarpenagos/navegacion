@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -114,5 +114,11 @@ S 5200 1150 1050 1000
 U 5E9DF2DA
 F0 "camara" 50
 F1 "camara.sch" 50
+$EndSheet
+$Sheet
+S 2900 950  1000 1500
+U 5EA3D59C
+F0 "Alimentacion_camara" 50
+F1 "Alimentacion_camara.sch" 50
 $EndSheet
 $EndSCHEMATC
