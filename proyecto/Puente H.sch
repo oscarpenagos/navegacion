@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -13,79 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Driver_Motor:L293D U?
-U 1 1 5EA1B20C
-P 5400 3400
-AR Path="/5EA1B20C" Ref="U?"  Part="1" 
-AR Path="/5EA16FA2/5EA1B20C" Ref="U?"  Part="1" 
-F 0 "U?" H 5006 4581 50  0000 C CNN
-F 1 "L293D" H 5006 4490 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 5650 2650 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 5100 4100 50  0001 C CNN
-	1    5400 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 2800 5900 2800
-Wire Wire Line
-	6100 3000 5900 3000
-Wire Wire Line
-	5900 3400 6100 3400
-Wire Wire Line
-	6100 3600 5900 3600
-Connection ~ 5500 4400
-Wire Wire Line
-	5600 4400 5500 4400
-Wire Wire Line
-	5600 4200 5600 4400
-Connection ~ 5400 4400
-Wire Wire Line
-	5500 4400 5400 4400
-Wire Wire Line
-	5500 4200 5500 4400
-Wire Wire Line
-	5300 4400 5400 4400
-Connection ~ 5300 4400
-Wire Wire Line
-	5300 4200 5300 4400
-Wire Wire Line
-	5200 4400 5300 4400
-Wire Wire Line
-	5200 4200 5200 4400
-$Comp
-L power:GND #PWR?
-U 1 1 5EA1B221
-P 5400 4400
-AR Path="/5EA1B221" Ref="#PWR?"  Part="1" 
-AR Path="/5EA16FA2/5EA1B221" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5400 4150 50  0001 C CNN
-F 1 "GND" H 5405 4227 50  0000 C CNN
-F 2 "" H 5400 4400 50  0001 C CNN
-F 3 "" H 5400 4400 50  0001 C CNN
-	1    5400 4400
-	1    0    0    -1  
-$EndComp
-Text GLabel 6100 3600 2    50   Input ~ 0
-M2-
-Text GLabel 6100 3400 2    50   Input ~ 0
-M2+
-Text GLabel 6100 3000 2    50   Input ~ 0
-M1-
-Text GLabel 6100 2800 2    50   Input ~ 0
-M1+
-Wire Wire Line
-	4750 3800 4900 3800
-Wire Wire Line
-	4900 3600 4750 3600
-Wire Wire Line
-	4750 3400 4900 3400
-Wire Wire Line
-	4900 3200 4750 3200
-Wire Wire Line
-	4750 3000 4900 3000
-Wire Wire Line
-	4900 2800 4750 2800
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5EA1B237
@@ -99,10 +26,6 @@ F 3 "~" H 7250 2850 50  0001 C CNN
 	1    7250 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 2850 0    50   Input ~ 0
-M1+
-Text GLabel 6900 2950 0    50   Input ~ 0
-M1-
 Wire Wire Line
 	7050 2850 6900 2850
 Wire Wire Line
@@ -120,32 +43,214 @@ F 3 "~" H 7250 3350 50  0001 C CNN
 	1    7250 3350
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 3350 0    50   Input ~ 0
-M2+
-Text GLabel 6900 3450 0    50   Input ~ 0
-M2-
 Wire Wire Line
 	7050 3350 6900 3350
 Wire Wire Line
 	6900 3450 7050 3450
-Text HLabel 4750 2800 0    50   Input ~ 0
-PH_1A
-Text HLabel 4750 3000 0    50   Input ~ 0
-PH_2A
-Text HLabel 4750 3200 0    50   Input ~ 0
+Text Label 6900 2850 0    50   ~ 0
+M1+
+Text Label 6900 2950 0    50   ~ 0
+M1-
+Text Label 6900 3350 0    50   ~ 0
+M2+
+Text Label 6900 3450 0    50   ~ 0
+M2-
+$Comp
+L Driver_Motor:DRV8848 U?
+U 1 1 5E9F03B2
+P 4200 3550
+F 0 "U?" H 4200 4331 50  0000 C CNN
+F 1 "DRV8848" H 4200 4240 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 4200 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8848.pdf" H 3050 4900 50  0001 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+Text Label 5100 3350 2    50   ~ 0
+M1+
+Text Label 5100 3750 2    50   ~ 0
+M2+
+$Comp
+L power:GND #PWR?
+U 1 1 5E9F40C3
+P 5550 3550
+F 0 "#PWR?" H 5550 3300 50  0001 C CNN
+F 1 "GND" V 5555 3422 50  0000 R CNN
+F 2 "" H 5550 3550 50  0001 C CNN
+F 3 "" H 5550 3550 50  0001 C CNN
+	1    5550 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 3350 3600 3350
+Wire Wire Line
+	3600 3550 3350 3550
+Wire Wire Line
+	3600 3650 3350 3650
+Wire Wire Line
+	3350 3850 3600 3850
+Wire Wire Line
+	3600 3950 3350 3950
+Wire Wire Line
+	5100 3350 4800 3350
+Wire Wire Line
+	4800 3750 5100 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5E9FC71B
+P 4200 4400
+F 0 "#PWR?" H 4200 4150 50  0001 C CNN
+F 1 "GND" H 4205 4227 50  0000 C CNN
+F 2 "" H 4200 4400 50  0001 C CNN
+F 3 "" H 4200 4400 50  0001 C CNN
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4150 4200 4300
+Wire Wire Line
+	5100 3850 4800 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5E9F49EA
+P 5550 3950
+F 0 "#PWR?" H 5550 3700 50  0001 C CNN
+F 1 "GND" V 5555 3822 50  0000 R CNN
+F 2 "" H 5550 3950 50  0001 C CNN
+F 3 "" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	0    -1   -1   0   
+$EndComp
+Text Label 5100 3850 2    50   ~ 0
+M2-
+$Comp
+L Device:R R?
+U 1 1 5E9FF7D6
+P 5300 3550
+F 0 "R?" V 5093 3550 50  0000 C CNN
+F 1 "10K" V 5184 3550 50  0000 C CNN
+F 2 "" V 5230 3550 50  0001 C CNN
+F 3 "~" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3450 5100 3450
+Text Label 5100 3450 2    50   ~ 0
+M1-
+$Comp
+L Device:R R?
+U 1 1 5EA01869
+P 5300 3950
+F 0 "R?" V 5093 3950 50  0000 C CNN
+F 1 "10K" V 5184 3950 50  0000 C CNN
+F 2 "" V 5230 3950 50  0001 C CNN
+F 3 "~" H 5300 3950 50  0001 C CNN
+	1    5300 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3550 5450 3550
+Wire Wire Line
+	5150 3550 4800 3550
+Wire Wire Line
+	5150 3950 4800 3950
+Wire Wire Line
+	5550 3950 5450 3950
+$Comp
+L Device:R R?
+U 1 1 5EA175D5
+P 2200 3400
+F 0 "R?" H 2270 3446 50  0000 L CNN
+F 1 "10K" H 2270 3355 50  0000 L CNN
+F 2 "" V 2130 3400 50  0001 C CNN
+F 3 "~" H 2200 3400 50  0001 C CNN
+	1    2200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EA12F42
+P 2200 2950
+F 0 "#PWR?" H 2200 2800 50  0001 C CNN
+F 1 "+3.3V" H 2215 3123 50  0000 C CNN
+F 2 "" H 2200 2950 50  0001 C CNN
+F 3 "" H 2200 2950 50  0001 C CNN
+	1    2200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA0F0CB
+P 2200 4150
+F 0 "#PWR?" H 2200 3900 50  0001 C CNN
+F 1 "GND" H 2205 3977 50  0000 C CNN
+F 2 "" H 2200 4150 50  0001 C CNN
+F 3 "" H 2200 4150 50  0001 C CNN
+	1    2200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EA0E86B
+P 2200 3850
+F 0 "C?" H 2315 3896 50  0000 L CNN
+F 1 "C" H 2315 3805 50  0000 L CNN
+F 2 "" H 2238 3700 50  0001 C CNN
+F 3 "~" H 2200 3850 50  0001 C CNN
+	1    2200 3850
+	1    0    0    -1  
+$EndComp
+Text HLabel 3350 3350 0    50   Input ~ 0
 PH_EN12
-Text HLabel 4750 3400 0    50   Input ~ 0
-PH_3A
-Text HLabel 4750 3600 0    50   Input ~ 0
+Text HLabel 3350 3950 0    50   Input ~ 0
 PH_4A
-Text HLabel 4750 3800 0    50   Input ~ 0
-PH_EN34
-Text HLabel 5300 2250 1    50   Input ~ 0
-3.3v
-Text HLabel 5500 2250 1    50   Input ~ 0
-5v
+Text HLabel 3350 3850 0    50   Input ~ 0
+PH_3A
+Text HLabel 3350 3650 0    50   Input ~ 0
+PH_2A
+Text HLabel 3350 3550 0    50   Input ~ 0
+PH_1A
 Wire Wire Line
-	5500 2250 5500 2400
+	2200 4150 2200 4000
 Wire Wire Line
-	5300 2400 5300 2250
+	2200 3700 2200 3650
+Wire Wire Line
+	2200 2950 2200 3150
+Wire Wire Line
+	3600 3150 2200 3150
+Connection ~ 2200 3150
+Wire Wire Line
+	2200 3150 2200 3250
+Wire Wire Line
+	3600 3250 2700 3250
+Wire Wire Line
+	2700 3250 2700 3650
+Wire Wire Line
+	2700 3650 2200 3650
+Connection ~ 2200 3650
+Wire Wire Line
+	2200 3650 2200 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EA2378A
+P 5250 2900
+F 0 "#PWR?" H 5250 2750 50  0001 C CNN
+F 1 "+3.3V" H 5265 3073 50  0000 C CNN
+F 2 "" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 2900
+Wire Wire Line
+	4300 4150 4300 4300
+Wire Wire Line
+	4300 4300 4200 4300
+Connection ~ 4200 4300
+Wire Wire Line
+	4200 4300 4200 4400
 $EndSCHEMATC

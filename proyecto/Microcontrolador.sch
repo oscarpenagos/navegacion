@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -13,11 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5250 2500 2    50   Input ~ 0
-RST_M
-Wire Wire Line
-	4100 1700 4350 1700
-Connection ~ 4350 1700
 Wire Wire Line
 	4350 1700 4450 1700
 Connection ~ 4450 1700
@@ -203,10 +198,6 @@ F 3 "~" H 8600 3950 50  0001 C CNN
 	1    8600 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 8000 3800 0    50   Input ~ 0
-RST_M
-Wire Wire Line
-	9250 3800 9100 3800
 Wire Wire Line
 	8800 3800 8600 3800
 Connection ~ 8600 3800
@@ -294,8 +285,6 @@ Wire Wire Line
 	3650 4800 3850 4800
 Wire Wire Line
 	3850 3900 3650 3900
-Wire Wire Line
-	5250 2500 5050 2500
 $Comp
 L MCU_ST_STM32L0:STM32L052C6Tx U?
 U 1 1 5E9F4F50
@@ -321,8 +310,6 @@ Text HLabel 3650 4700 0    50   Input ~ 0
 PH_4A
 Text HLabel 3650 4800 0    50   Input ~ 0
 PH_EN34
-Text HLabel 4100 1700 0    50   Input ~ 0
-3.3v
 Text HLabel 5200 4300 2    50   Input ~ 0
 MOSI
 Text HLabel 3650 4200 0    50   Input ~ 0
@@ -439,6 +426,124 @@ Wire Wire Line
 	5050 2900 5350 2900
 Wire Wire Line
 	5900 2900 5650 2900
-Text HLabel 9250 3800 2    50   Input ~ 0
-3.3v
+Text Label 5400 2500 2    50   ~ 0
+RST_M
+Text Label 8000 3800 0    50   ~ 0
+RST_M
+Wire Wire Line
+	5050 2500 5400 2500
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J?
+U 1 1 5E986004
+P 8750 2200
+F 0 "J?" H 8221 2246 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 8221 2155 50  0000 R CNN
+F 2 "" H 9200 1150 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 8400 950 50  0001 C CNN
+	1    8750 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 9650 1700 2    50   Input ~ 0
+TRST
+Text HLabel 9650 1800 2    50   Input ~ 0
+SRST
+Text HLabel 9650 2100 2    50   Input ~ 0
+TCK
+Text HLabel 9650 2200 2    50   Input ~ 0
+TMS
+Text HLabel 9650 2300 2    50   Input ~ 0
+TD0
+Text HLabel 9650 2400 2    50   Input ~ 0
+TD1
+Wire Wire Line
+	9650 2400 9350 2400
+Wire Wire Line
+	9350 2300 9650 2300
+Wire Wire Line
+	9650 2200 9350 2200
+Wire Wire Line
+	9350 2100 9650 2100
+Wire Wire Line
+	9650 1800 9350 1800
+Wire Wire Line
+	9350 1700 9650 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5E997632
+P 8650 3100
+F 0 "#PWR?" H 8650 2850 50  0001 C CNN
+F 1 "GND" H 8655 2927 50  0000 C CNN
+F 2 "" H 8650 3100 50  0001 C CNN
+F 3 "" H 8650 3100 50  0001 C CNN
+	1    8650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3100 8650 3000
+Text HLabel 5250 4800 2    50   Input ~ 0
+TRST
+Text HLabel 5250 4900 2    50   Input ~ 0
+SRST
+Text HLabel 5250 5000 2    50   Input ~ 0
+TCK
+Text HLabel 5250 5100 2    50   Input ~ 0
+TMS
+Text HLabel 5250 5200 2    50   Input ~ 0
+TD0
+Text HLabel 5250 5300 2    50   Input ~ 0
+TD1
+Wire Wire Line
+	5250 4800 5050 4800
+Wire Wire Line
+	5050 4900 5250 4900
+Wire Wire Line
+	5250 5000 5050 5000
+Wire Wire Line
+	5050 5100 5250 5100
+Wire Wire Line
+	5250 5200 5050 5200
+Wire Wire Line
+	5050 5300 5250 5300
+Wire Wire Line
+	8750 1400 8750 1100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9CE6D3
+P 8750 1100
+F 0 "#PWR?" H 8750 950 50  0001 C CNN
+F 1 "+3.3V" H 8765 1273 50  0000 C CNN
+F 2 "" H 8750 1100 50  0001 C CNN
+F 3 "" H 8750 1100 50  0001 C CNN
+	1    8750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9CEFDA
+P 9300 3650
+F 0 "#PWR?" H 9300 3500 50  0001 C CNN
+F 1 "+3.3V" H 9315 3823 50  0000 C CNN
+F 2 "" H 9300 3650 50  0001 C CNN
+F 3 "" H 9300 3650 50  0001 C CNN
+	1    9300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3800 9300 3800
+Wire Wire Line
+	9300 3800 9300 3650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9D4164
+P 4350 1450
+F 0 "#PWR?" H 4350 1300 50  0001 C CNN
+F 1 "+3.3V" H 4365 1623 50  0000 C CNN
+F 2 "" H 4350 1450 50  0001 C CNN
+F 3 "" H 4350 1450 50  0001 C CNN
+	1    4350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1450 4350 1700
+Connection ~ 4350 1700
 $EndSCHEMATC
