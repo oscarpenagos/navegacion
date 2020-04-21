@@ -116,7 +116,7 @@ F0 "camara" 50
 F1 "camara.sch" 50
 $EndSheet
 $Sheet
-S 2900 950  1000 1500
+S 2200 1200 1000 1500
 U 5EA3D59C
 F0 "Alimentacion_camara" 50
 F1 "Alimentacion_camara.sch" 50
