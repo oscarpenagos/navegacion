@@ -13,131 +13,17 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Regulator_Linear:LM1117-3.3 U?
-U 1 1 5E9D90F6
-P 3600 4700
-AR Path="/5E9D90F6" Ref="U?"  Part="1" 
-AR Path="/5E9BC166/5E9D90F6" Ref="U?"  Part="1" 
-AR Path="/5EA3D59C/5E9D90F6" Ref="U?"  Part="1" 
-F 0 "U?" H 3600 4942 50  0000 C CNN
-F 1 "LM1117-3.3" H 3600 4851 50  0000 C CNN
-F 2 "" H 3600 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3600 4700 50  0001 C CNN
-	1    3600 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9D90FC
-P 2950 4950
-AR Path="/5E9D90FC" Ref="C?"  Part="1" 
-AR Path="/5E9BC166/5E9D90FC" Ref="C?"  Part="1" 
-AR Path="/5EA3D59C/5E9D90FC" Ref="C?"  Part="1" 
-F 0 "C?" H 3065 4996 50  0000 L CNN
-F 1 "10uF" H 3065 4905 50  0000 L CNN
-F 2 "" H 2988 4800 50  0001 C CNN
-F 3 "~" H 2950 4950 50  0001 C CNN
-	1    2950 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9D9102
-P 4200 4950
-AR Path="/5E9D9102" Ref="C?"  Part="1" 
-AR Path="/5E9BC166/5E9D9102" Ref="C?"  Part="1" 
-AR Path="/5EA3D59C/5E9D9102" Ref="C?"  Part="1" 
-F 0 "C?" H 4315 4996 50  0000 L CNN
-F 1 "0.1uF" H 4315 4905 50  0000 L CNN
-F 2 "" H 4238 4800 50  0001 C CNN
-F 3 "~" H 4200 4950 50  0001 C CNN
-	1    4200 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5E9D9108
-P 4650 4950
-AR Path="/5E9D9108" Ref="C?"  Part="1" 
-AR Path="/5E9BC166/5E9D9108" Ref="C?"  Part="1" 
-AR Path="/5EA3D59C/5E9D9108" Ref="C?"  Part="1" 
-F 0 "C?" H 4765 4996 50  0000 L CNN
-F 1 "10uF" H 4765 4905 50  0000 L CNN
-F 2 "" H 4688 4800 50  0001 C CNN
-F 3 "~" H 4650 4950 50  0001 C CNN
-	1    4650 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3300 4700 2950 4700
-Wire Wire Line
-	2950 4800 2950 4700
-Wire Wire Line
-	4200 4800 4200 4700
-Connection ~ 4200 4700
-Wire Wire Line
-	4200 4700 3900 4700
-Wire Wire Line
-	4650 4800 4650 4700
-Wire Wire Line
-	4650 4700 4200 4700
-$Comp
-L power:GND #PWR?
-U 1 1 5E9D911B
-P 3600 5300
-AR Path="/5E9D911B" Ref="#PWR?"  Part="1" 
-AR Path="/5E9BC166/5E9D911B" Ref="#PWR?"  Part="1" 
-AR Path="/5EA3D59C/5E9D911B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3600 5050 50  0001 C CNN
-F 1 "GND" H 3605 5127 50  0000 C CNN
-F 2 "" H 3600 5300 50  0001 C CNN
-F 3 "" H 3600 5300 50  0001 C CNN
-	1    3600 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 5300 4200 5300
-Connection ~ 3600 5300
-Wire Wire Line
-	3600 5000 3600 5300
-Wire Wire Line
-	4200 5100 4200 5300
-Connection ~ 4200 5300
-Wire Wire Line
-	4200 5300 3600 5300
-Wire Wire Line
-	2950 5100 2950 5300
-Wire Wire Line
-	2950 5300 3600 5300
-Wire Wire Line
-	4650 5100 4650 5300
-Wire Wire Line
-	4650 4500 4650 4700
-Connection ~ 4650 4700
-Wire Wire Line
-	2950 4700 2950 4500
-Connection ~ 2950 4700
-$Comp
-L power:+5VD #PWR?
-U 1 1 5EA5E622
-P 2950 4500
-F 0 "#PWR?" H 2950 4350 50  0001 C CNN
-F 1 "+5VD" H 2965 4673 50  0000 C CNN
-F 2 "" H 2950 4500 50  0001 C CNN
-F 3 "" H 2950 4500 50  0001 C CNN
-	1    2950 4500
-	1    0    0    -1  
-$EndComp
+	4750 6150 4750 6350
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5EA5F12F
-P 4650 4500
-F 0 "#PWR?" H 4650 4350 50  0001 C CNN
-F 1 "+3V3" H 4665 4673 50  0000 C CNN
-F 2 "" H 4650 4500 50  0001 C CNN
-F 3 "" H 4650 4500 50  0001 C CNN
-	1    4650 4500
+P 4750 5550
+F 0 "#PWR?" H 4750 5400 50  0001 C CNN
+F 1 "+3V3" H 4765 5723 50  0000 C CNN
+F 2 "" H 4750 5550 50  0001 C CNN
+F 3 "" H 4750 5550 50  0001 C CNN
+	1    4750 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -552,4 +438,124 @@ F 3 "~" H 2350 2050 50  0001 C CNN
 	1    2200 2100
 	1    0    0    -1  
 $EndComp
+Connection ~ 4750 5750
+Wire Wire Line
+	4750 5550 4750 5750
+Wire Wire Line
+	4750 5850 4750 5750
+$Comp
+L power:+5VD #PWR?
+U 1 1 5EA5E622
+P 3050 5550
+F 0 "#PWR?" H 3050 5400 50  0001 C CNN
+F 1 "+5VD" H 3065 5723 50  0000 C CNN
+F 2 "" H 3050 5550 50  0001 C CNN
+F 3 "" H 3050 5550 50  0001 C CNN
+	1    3050 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 5750
+Wire Wire Line
+	3050 5750 3050 5550
+Wire Wire Line
+	3050 6350 3700 6350
+Wire Wire Line
+	3050 6150 3050 6350
+Wire Wire Line
+	4300 6350 3700 6350
+Connection ~ 4300 6350
+Wire Wire Line
+	4300 6150 4300 6350
+Wire Wire Line
+	3700 6050 3700 6350
+Connection ~ 3700 6350
+Wire Wire Line
+	4750 6350 4300 6350
+$Comp
+L power:GND #PWR?
+U 1 1 5E9D911B
+P 3700 6350
+AR Path="/5E9D911B" Ref="#PWR?"  Part="1" 
+AR Path="/5E9BC166/5E9D911B" Ref="#PWR?"  Part="1" 
+AR Path="/5EA3D59C/5E9D911B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 6100 50  0001 C CNN
+F 1 "GND" H 3705 6177 50  0000 C CNN
+F 2 "" H 3700 6350 50  0001 C CNN
+F 3 "" H 3700 6350 50  0001 C CNN
+	1    3700 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 5750 4300 5750
+Wire Wire Line
+	4300 5750 4000 5750
+Connection ~ 4300 5750
+Wire Wire Line
+	4300 5850 4300 5750
+Wire Wire Line
+	3050 5850 3050 5750
+Wire Wire Line
+	3400 5750 3050 5750
+$Comp
+L Device:C C?
+U 1 1 5E9D9108
+P 4750 6000
+AR Path="/5E9D9108" Ref="C?"  Part="1" 
+AR Path="/5E9BC166/5E9D9108" Ref="C?"  Part="1" 
+AR Path="/5EA3D59C/5E9D9108" Ref="C?"  Part="1" 
+F 0 "C?" H 4865 6046 50  0000 L CNN
+F 1 "10uF" H 4865 5955 50  0000 L CNN
+F 2 "" H 4788 5850 50  0001 C CNN
+F 3 "~" H 4750 6000 50  0001 C CNN
+	1    4750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9D9102
+P 4300 6000
+AR Path="/5E9D9102" Ref="C?"  Part="1" 
+AR Path="/5E9BC166/5E9D9102" Ref="C?"  Part="1" 
+AR Path="/5EA3D59C/5E9D9102" Ref="C?"  Part="1" 
+F 0 "C?" H 4415 6046 50  0000 L CNN
+F 1 "0.1uF" H 4415 5955 50  0000 L CNN
+F 2 "" H 4338 5850 50  0001 C CNN
+F 3 "~" H 4300 6000 50  0001 C CNN
+	1    4300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9D90FC
+P 3050 6000
+AR Path="/5E9D90FC" Ref="C?"  Part="1" 
+AR Path="/5E9BC166/5E9D90FC" Ref="C?"  Part="1" 
+AR Path="/5EA3D59C/5E9D90FC" Ref="C?"  Part="1" 
+F 0 "C?" H 3165 6046 50  0000 L CNN
+F 1 "10uF" H 3165 5955 50  0000 L CNN
+F 2 "" H 3088 5850 50  0001 C CNN
+F 3 "~" H 3050 6000 50  0001 C CNN
+	1    3050 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 5E9D90F6
+P 3700 5750
+AR Path="/5E9D90F6" Ref="U?"  Part="1" 
+AR Path="/5E9BC166/5E9D90F6" Ref="U?"  Part="1" 
+AR Path="/5EA3D59C/5E9D90F6" Ref="U?"  Part="1" 
+F 0 "U?" H 3700 5992 50  0000 C CNN
+F 1 "LM1117-3.3" H 3700 5901 50  0000 C CNN
+F 2 "" H 3700 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3700 5750 50  0001 C CNN
+	1    3700 5750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11250 4350 450  4350
+Text Notes 500  4300 0    50   ~ 0
+CARGADOR DE BATERIA
+Text Notes 500  7750 0    50   ~ 0
+REGULADOR 3.3V
 $EndSCHEMATC
