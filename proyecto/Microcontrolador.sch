@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -443,18 +443,6 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_d
 	1    8750 2200
 	1    0    0    -1  
 $EndComp
-Text HLabel 9650 1700 2    50   Input ~ 0
-TRST
-Text HLabel 9650 1800 2    50   Input ~ 0
-SRST
-Text HLabel 9650 2100 2    50   Input ~ 0
-TCK
-Text HLabel 9650 2200 2    50   Input ~ 0
-TMS
-Text HLabel 9650 2300 2    50   Input ~ 0
-TD0
-Text HLabel 9650 2400 2    50   Input ~ 0
-TD1
 Wire Wire Line
 	9650 2400 9350 2400
 Wire Wire Line
@@ -476,18 +464,6 @@ F 3 "" H 8650 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 3100 8650 3000
-Text HLabel 5250 4800 2    50   Input ~ 0
-TRST
-Text HLabel 5250 4900 2    50   Input ~ 0
-SRST
-Text HLabel 5250 5000 2    50   Input ~ 0
-TCK
-Text HLabel 5250 5100 2    50   Input ~ 0
-TMS
-Text HLabel 5250 5200 2    50   Input ~ 0
-TD0
-Text HLabel 5250 5300 2    50   Input ~ 0
-TD1
 Wire Wire Line
 	5250 4800 5050 4800
 Wire Wire Line
@@ -549,34 +525,58 @@ Wire Wire Line
 Connection ~ 8750 1250
 Wire Wire Line
 	8750 1250 8750 1100
-$Comp
-L Device:R R?
-U 1 1 5EA45BC4
-P 9700 2000
-F 0 "R?" V 9493 2000 50  0001 C CNN
-F 1 "510" V 9585 2000 50  0000 C CNN
-F 2 "" V 9630 2000 50  0001 C CNN
-F 3 "~" H 9700 2000 50  0001 C CNN
-	1    9700 2000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9350 2100 9650 2100
 Wire Wire Line
 	9350 1800 9650 1800
+Text Label 9500 1700 0    50   ~ 0
+TRST1
+Text Label 9500 1800 0    50   ~ 0
+SRST1
+Text Label 9500 2100 0    50   ~ 0
+TCK1
+Text Label 9500 2200 0    50   ~ 0
+TMS1
+Text Label 9500 2300 0    50   ~ 0
+TD01
+Text Label 9500 2400 0    50   ~ 0
+TD11
+Wire Wire Line
+	9350 2000 9700 2000
+Wire Wire Line
+	10100 2000 10000 2000
 $Comp
 L power:GND #PWR?
 U 1 1 5EA4A411
-P 10050 2000
-F 0 "#PWR?" H 10050 1750 50  0001 C CNN
-F 1 "GND" V 10055 1872 50  0000 R CNN
-F 2 "" H 10050 2000 50  0001 C CNN
-F 3 "" H 10050 2000 50  0001 C CNN
-	1    10050 2000
+P 10100 2000
+F 0 "#PWR?" H 10100 1750 50  0001 C CNN
+F 1 "GND" V 10105 1872 50  0000 R CNN
+F 2 "" H 10100 2000 50  0001 C CNN
+F 3 "" H 10100 2000 50  0001 C CNN
+	1    10100 2000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9350 2000 9550 2000
-Wire Wire Line
-	10050 2000 9850 2000
+$Comp
+L Device:R R?
+U 1 1 5EA45BC4
+P 9850 2000
+F 0 "R?" V 9643 2000 50  0001 C CNN
+F 1 "510" V 9735 2000 50  0000 C CNN
+F 2 "" V 9780 2000 50  0001 C CNN
+F 3 "~" H 9850 2000 50  0001 C CNN
+	1    9850 2000
+	0    1    1    0   
+$EndComp
+Text Label 5250 4800 0    50   ~ 0
+TRST
+Text Label 5250 4900 0    50   ~ 0
+SRST
+Text Label 5250 5000 0    50   ~ 0
+TCK
+Text Label 5250 5100 0    50   ~ 0
+TMS
+Text Label 5250 5200 0    50   ~ 0
+TD0
+Text Label 5250 5300 0    50   ~ 0
+TD1
 $EndSCHEMATC
