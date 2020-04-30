@@ -34,7 +34,7 @@ AR Path="/5EA0EFB6" Ref="J?"  Part="1"
 AR Path="/5E9F954D/5EA0EFB6" Ref="J3"  Part="1" 
 F 0 "J3" H 1957 2317 50  0000 C CNN
 F 1 "USB_A" H 1957 2226 50  0000 C CNN
-F 2 "" H 2050 1800 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 2050 1800 50  0001 C CNN
 F 3 " ~" H 2050 1800 50  0001 C CNN
 	1    1900 1850
 	1    0    0    -1  
@@ -71,7 +71,7 @@ AR Path="/5EA0EFC8" Ref="L?"  Part="1"
 AR Path="/5E9F954D/5EA0EFC8" Ref="L1"  Part="1" 
 F 0 "L1" V 3190 1950 50  0000 C CNN
 F 1 "L" V 3099 1950 50  0000 C CNN
-F 2 "" H 3000 1950 50  0001 C CNN
+F 2 "Inductor_SMD:L_2010_5025Metric" H 3000 1950 50  0001 C CNN
 F 3 "~" H 3000 1950 50  0001 C CNN
 	1    3000 1950
 	0    -1   -1   0   
@@ -84,7 +84,7 @@ AR Path="/5EA0EFCE" Ref="L?"  Part="1"
 AR Path="/5E9F954D/5EA0EFCE" Ref="L2"  Part="1" 
 F 0 "L2" V 3290 1850 50  0000 C CNN
 F 1 "L" V 3199 1850 50  0000 C CNN
-F 2 "" H 3100 1850 50  0001 C CNN
+F 2 "Inductor_SMD:L_2010_5025Metric" H 3100 1850 50  0001 C CNN
 F 3 "~" H 3100 1850 50  0001 C CNN
 	1    3100 1850
 	0    -1   -1   0   
@@ -97,7 +97,7 @@ AR Path="/5EA0EFD4" Ref="R?"  Part="1"
 AR Path="/5E9F954D/5EA0EFD4" Ref="R5"  Part="1" 
 F 0 "R5" V 3393 1850 50  0000 C CNN
 F 1 "R" V 3484 1850 50  0000 C CNN
-F 2 "" V 3530 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3530 1850 50  0001 C CNN
 F 3 "~" H 3600 1850 50  0001 C CNN
 	1    3600 1850
 	0    1    1    0   
@@ -110,7 +110,7 @@ AR Path="/5EA0EFDA" Ref="R?"  Part="1"
 AR Path="/5E9F954D/5EA0EFDA" Ref="R4"  Part="1" 
 F 0 "R4" V 3243 1950 50  0000 C CNN
 F 1 "R" V 3334 1950 50  0000 C CNN
-F 2 "" V 3380 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3380 1950 50  0001 C CNN
 F 3 "~" H 3450 1950 50  0001 C CNN
 	1    3450 1950
 	0    1    1    0   
@@ -158,7 +158,7 @@ AR Path="/5EA0EFF6" Ref="C?"  Part="1"
 AR Path="/5E9F954D/5EA0EFF6" Ref="C2"  Part="1" 
 F 0 "C2" H 3015 1246 50  0000 L CNN
 F 1 "C" H 3015 1155 50  0000 L CNN
-F 2 "" H 2938 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2938 1050 50  0001 C CNN
 F 3 "~" H 2900 1200 50  0001 C CNN
 	1    2900 1200
 	1    0    0    -1  
@@ -171,7 +171,7 @@ AR Path="/5EA0EFFC" Ref="C?"  Part="1"
 AR Path="/5E9F954D/5EA0EFFC" Ref="C3"  Part="1" 
 F 0 "C3" H 3365 1246 50  0000 L CNN
 F 1 "C" H 3365 1155 50  0000 L CNN
-F 2 "" H 3288 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3288 1050 50  0001 C CNN
 F 3 "~" H 3250 1200 50  0001 C CNN
 	1    3250 1200
 	1    0    0    -1  
@@ -206,7 +206,7 @@ AR Path="/5EA0F00D" Ref="L?"  Part="1"
 AR Path="/5E9F954D/5EA0F00D" Ref="L3"  Part="1" 
 F 0 "L3" V 3840 950 50  0000 C CNN
 F 1 "L" V 3749 950 50  0000 C CNN
-F 2 "" H 3650 950 50  0001 C CNN
+F 2 "Inductor_SMD:L_2010_5025Metric" H 3650 950 50  0001 C CNN
 F 3 "~" H 3650 950 50  0001 C CNN
 	1    3650 950 
 	0    -1   -1   0   
@@ -302,7 +302,7 @@ AR Path="/5E9DF408/5EA20F58" Ref="R?"  Part="1"
 AR Path="/5E9F954D/5EA20F58" Ref="R7"  Part="1" 
 F 0 "R7" V 9793 4600 50  0001 C CNN
 F 1 "510" V 9885 4600 50  0000 C CNN
-F 2 "" V 9930 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 9930 4600 50  0001 C CNN
 F 3 "~" H 10000 4600 50  0001 C CNN
 	1    10000 4600
 	0    1    1    0   
@@ -435,7 +435,7 @@ AR Path="/5EA0F048" Ref="C?"  Part="1"
 AR Path="/5E9F954D/5EA0F048" Ref="C4"  Part="1" 
 F 0 "C4" H 3515 4046 50  0000 L CNN
 F 1 "0.1uF" H 3515 3955 50  0000 L CNN
-F 2 "" H 3438 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3438 3850 50  0001 C CNN
 F 3 "~" H 3400 4000 50  0001 C CNN
 	1    3400 4000
 	1    0    0    -1  
@@ -448,7 +448,7 @@ AR Path="/5EA0F042" Ref="C?"  Part="1"
 AR Path="/5E9F954D/5EA0F042" Ref="C5"  Part="1" 
 F 0 "C5" H 3915 4046 50  0000 L CNN
 F 1 "0.1uF" H 3915 3955 50  0000 L CNN
-F 2 "" H 3838 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3838 3850 50  0001 C CNN
 F 3 "~" H 3800 4000 50  0001 C CNN
 	1    3800 4000
 	1    0    0    -1  
@@ -516,7 +516,7 @@ AR Path="/5E9DF408/5EA20F36" Ref="J?"  Part="1"
 AR Path="/5E9F954D/5EA20F36" Ref="J4"  Part="1" 
 F 0 "J4" H 8071 4846 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_20" H 8071 4755 50  0000 R CNN
-F 2 "" H 9050 3750 50  0001 L TNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_2x10_P1.27mm_Vertical" H 9050 3750 50  0001 L TNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 8250 3550 50  0001 C CNN
 	1    8600 4800
 	1    0    0    -1  
@@ -610,7 +610,7 @@ AR Path="/5EA12D7C" Ref="C?"  Part="1"
 AR Path="/5E9F954D/5EA12D7C" Ref="C6"  Part="1" 
 F 0 "C6" H 8865 1796 50  0000 L CNN
 F 1 "0.1uF" H 8865 1705 50  0000 L CNN
-F 2 "" H 8788 1600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8788 1600 50  0001 C CNN
 F 3 "~" H 8750 1750 50  0001 C CNN
 	1    8750 1750
 	1    0    0    -1  
@@ -623,7 +623,7 @@ AR Path="/5EA12D76" Ref="R?"  Part="1"
 AR Path="/5E9F954D/5EA12D76" Ref="R6"  Part="1" 
 F 0 "R6" V 8893 1600 50  0000 C CNN
 F 1 "10k" V 8984 1600 50  0000 C CNN
-F 2 "" V 9030 1600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 9030 1600 50  0001 C CNN
 F 3 "~" H 9100 1600 50  0001 C CNN
 	1    9100 1600
 	0    1    1    0   
