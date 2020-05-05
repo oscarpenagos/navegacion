@@ -39,15 +39,6 @@ F 3 " ~" H 2050 1800 50  0001 C CNN
 	1    1900 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 2450 1900 2350
-Wire Wire Line
-	1800 2250 1800 2350
-Wire Wire Line
-	1800 2350 1900 2350
-Connection ~ 1900 2350
-Wire Wire Line
-	1900 2350 1900 2250
 $Comp
 L power:GND #PWR?
 U 1 1 5EA0EFC1
@@ -645,4 +636,36 @@ Text Notes 7000 6500 0    50   ~ 0
 JTAG
 Text Notes 7000 3050 0    50   ~ 0
 RESET
+Wire Wire Line
+	1900 2250 1900 2450
+$Comp
+L Device:C C43
+U 1 1 5EB1B686
+P 1650 2550
+F 0 "C43" H 1450 2650 50  0000 L CNN
+F 1 "0.1uF" H 1400 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 2400 50  0001 C CNN
+F 3 "~" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 5EB1E40A
+P 1650 2800
+F 0 "#PWR0170" H 1650 2550 50  0001 C CNN
+F 1 "GND" H 1655 2627 50  0000 C CNN
+F 2 "" H 1650 2800 50  0001 C CNN
+F 3 "" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2250 1800 2350
+Wire Wire Line
+	1800 2350 1650 2350
+Wire Wire Line
+	1650 2350 1650 2400
+Wire Wire Line
+	1650 2700 1650 2800
 $EndSCHEMATC
