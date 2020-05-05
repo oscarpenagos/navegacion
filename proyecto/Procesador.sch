@@ -566,7 +566,7 @@ AR Path="/5EA12D8E" Ref="SW?"  Part="1"
 AR Path="/5E9F954D/5EA12D8E" Ref="SW1"  Part="1" 
 F 0 "SW1" V 8446 1852 50  0000 R CNN
 F 1 "SW_Push" V 8355 1852 50  0000 R CNN
-F 2 "" H 8400 2100 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8400 2100 50  0001 C CNN
 F 3 "~" H 8400 2100 50  0001 C CNN
 	1    8400 1900
 	0    -1   -1   0   
