@@ -15,28 +15,6 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	3850 2000 3850 2200
-$Comp
-L power:+3V3 #PWR0142
-U 1 1 5EA5F12F
-P 3850 1400
-F 0 "#PWR0142" H 3850 1250 50  0001 C CNN
-F 1 "+3V3" H 3865 1573 50  0000 C CNN
-F 2 "" H 3850 1400 50  0001 C CNN
-F 3 "" H 3850 1400 50  0001 C CNN
-	1    3850 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D6
-U 1 1 5EA5EC7D
-P 7950 4050
-F 0 "D6" H 7950 3834 50  0000 C CNN
-F 1 "D_Schottky" H 7950 3925 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7950 4050 50  0001 C CNN
-F 3 "~" H 7950 4050 50  0001 C CNN
-	1    7950 4050
-	-1   0    0    1   
-$EndComp
 Connection ~ 9400 4050
 Wire Wire Line
 	9400 4050 9800 4050
@@ -330,7 +308,7 @@ U 1 1 5EA3E896
 P 6300 5000
 F 0 "BT2" H 6350 4950 50  0000 L CNN
 F 1 "Battery_Cell_2" H 6350 4850 50  0000 L CNN
-F 2 "" V 6300 5060 50  0001 C CNN
+F 2 "Battery:Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles" V 6300 5060 50  0001 C CNN
 F 3 "~" V 6300 5060 50  0001 C CNN
 	1    6300 5000
 	1    0    0    -1  
@@ -429,8 +407,6 @@ F 3 "~" H 3250 4500 50  0001 C CNN
 $EndComp
 Connection ~ 3850 1600
 Wire Wire Line
-	3850 1400 3850 1600
-Wire Wire Line
 	3850 1700 3850 1600
 Connection ~ 2150 1600
 Wire Wire Line
@@ -440,29 +416,12 @@ Wire Wire Line
 Wire Wire Line
 	2150 2000 2150 2200
 Wire Wire Line
-	3400 2200 2800 2200
-Connection ~ 3400 2200
-Wire Wire Line
 	3400 2000 3400 2200
 Wire Wire Line
 	2800 1900 2800 2200
 Connection ~ 2800 2200
 Wire Wire Line
 	3850 2200 3400 2200
-$Comp
-L power:GND #PWR?
-U 1 1 5E9D911B
-P 2800 2200
-AR Path="/5E9D911B" Ref="#PWR?"  Part="1" 
-AR Path="/5E9BC166/5E9D911B" Ref="#PWR?"  Part="1" 
-AR Path="/5EA3D59C/5E9D911B" Ref="#PWR0150"  Part="1" 
-F 0 "#PWR0150" H 2800 1950 50  0001 C CNN
-F 1 "GND" H 2805 2027 50  0000 C CNN
-F 2 "" H 2800 2200 50  0001 C CNN
-F 3 "" H 2800 2200 50  0001 C CNN
-	1    2800 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3850 1600 3400 1600
 Wire Wire Line
@@ -644,20 +603,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 1700 9350 1600
 Connection ~ 9350 1600
-$Comp
-L power:GND #PWR?
-U 1 1 5EAC03A4
-P 8300 2200
-AR Path="/5EAC03A4" Ref="#PWR?"  Part="1" 
-AR Path="/5E9BC166/5EAC03A4" Ref="#PWR?"  Part="1" 
-AR Path="/5EA3D59C/5EAC03A4" Ref="#PWR0169"  Part="1" 
-F 0 "#PWR0169" H 8300 1950 50  0001 C CNN
-F 1 "GND" H 8305 2027 50  0000 C CNN
-F 2 "" H 8300 2200 50  0001 C CNN
-F 3 "" H 8300 2200 50  0001 C CNN
-	1    8300 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9350 2200 8900 2200
 Connection ~ 8900 2200
@@ -690,4 +635,57 @@ Wire Notes Line
 	5850 3400 5850 450 
 Wire Wire Line
 	3400 4550 3400 4650
+$Comp
+L power:GNDA #PWR0150
+U 1 1 5EB29D20
+P 2800 2350
+F 0 "#PWR0150" H 2800 2100 50  0001 C CNN
+F 1 "GNDA" H 2805 2177 50  0000 C CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2200 2800 2350
+$Comp
+L power:GNDA #PWR0169
+U 1 1 5EB2D91F
+P 8300 2350
+F 0 "#PWR0169" H 8300 2100 50  0001 C CNN
+F 1 "GNDA" H 8305 2177 50  0000 C CNN
+F 2 "" H 8300 2350 50  0001 C CNN
+F 3 "" H 8300 2350 50  0001 C CNN
+	1    8300 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2350 8300 2200
+$Comp
+L Diode:1N5817 D6
+U 1 1 5EB368CF
+P 7950 4050
+F 0 "D6" H 7950 3834 50  0000 C CNN
+F 1 "1N5817" H 7950 3925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7950 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 7950 4050 50  0001 C CNN
+	1    7950 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 1400 3850 1600
+$Comp
+L power:+3V0 #PWR0142
+U 1 1 5EB53082
+P 3850 1400
+F 0 "#PWR0142" H 3850 1250 50  0001 C CNN
+F 1 "+3V0" H 3865 1573 50  0000 C CNN
+F 2 "" H 3850 1400 50  0001 C CNN
+F 3 "" H 3850 1400 50  0001 C CNN
+	1    3850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2200 2800 2200
+Connection ~ 3400 2200
 $EndSCHEMATC

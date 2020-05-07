@@ -346,17 +346,6 @@ TD12
 Connection ~ 3800 3800
 Wire Wire Line
 	3800 3600 3800 3800
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 5E9C8B2C
-P 3800 3600
-F 0 "#PWR0113" H 3800 3450 50  0001 C CNN
-F 1 "+3.3V" H 3815 3773 50  0000 C CNN
-F 2 "" H 3800 3600 50  0001 C CNN
-F 3 "" H 3800 3600 50  0001 C CNN
-	1    3800 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2400 5150 2200 5150
 Wire Wire Line
@@ -512,32 +501,8 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_d
 	1    8600 4800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5EA20F4E
-P 8600 3700
-AR Path="/5E9DF408/5EA20F4E" Ref="#PWR?"  Part="1" 
-AR Path="/5E9F954D/5EA20F4E" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 8600 3550 50  0001 C CNN
-F 1 "+3.3V" H 8615 3873 50  0000 C CNN
-F 2 "" H 8600 3700 50  0001 C CNN
-F 3 "" H 8600 3700 50  0001 C CNN
-	1    8600 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9400 1450 9400 1600
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 5E9CA689
-P 9400 1450
-F 0 "#PWR0117" H 9400 1300 50  0001 C CNN
-F 1 "+3.3V" H 9415 1623 50  0000 C CNN
-F 2 "" H 9400 1450 50  0001 C CNN
-F 3 "" H 9400 1450 50  0001 C CNN
-	1    9400 1450
-	1    0    0    -1  
-$EndComp
 Text Label 8150 1600 2    50   ~ 0
 RST_P
 Wire Wire Line
@@ -566,7 +531,7 @@ AR Path="/5EA12D8E" Ref="SW?"  Part="1"
 AR Path="/5E9F954D/5EA12D8E" Ref="SW1"  Part="1" 
 F 0 "SW1" V 8446 1852 50  0000 R CNN
 F 1 "SW_Push" V 8355 1852 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8400 2100 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8400 2100 50  0001 C CNN
 F 3 "~" H 8400 2100 50  0001 C CNN
 	1    8400 1900
 	0    -1   -1   0   
@@ -668,4 +633,37 @@ Wire Wire Line
 	1650 2350 1650 2400
 Wire Wire Line
 	1650 2700 1650 2800
+$Comp
+L power:+3V8 #PWR0113
+U 1 1 5EB689CB
+P 9400 1450
+F 0 "#PWR0113" H 9400 1300 50  0001 C CNN
+F 1 "+3V8" H 9415 1623 50  0000 C CNN
+F 2 "" H 9400 1450 50  0001 C CNN
+F 3 "" H 9400 1450 50  0001 C CNN
+	1    9400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V8 #PWR0116
+U 1 1 5EB6AB0F
+P 8600 3700
+F 0 "#PWR0116" H 8600 3550 50  0001 C CNN
+F 1 "+3V8" H 8615 3873 50  0000 C CNN
+F 2 "" H 8600 3700 50  0001 C CNN
+F 3 "" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V8 #PWR0117
+U 1 1 5EB6AF97
+P 3800 3600
+F 0 "#PWR0117" H 3800 3450 50  0001 C CNN
+F 1 "+3V8" H 3815 3773 50  0000 C CNN
+F 2 "" H 3800 3600 50  0001 C CNN
+F 3 "" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
