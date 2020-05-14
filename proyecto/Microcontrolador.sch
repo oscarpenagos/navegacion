@@ -441,9 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 5350 4250 5350
 Wire Wire Line
-	4250 5450 4050 5450
-Wire Wire Line
-	4050 5550 4250 5550
+	4250 5550 4050 5550
 Wire Wire Line
 	9150 1600 9350 1600
 Wire Wire Line
@@ -466,14 +464,8 @@ Text Label 4250 5050 0    50   ~ 0
 TRST1
 Text Label 4250 5150 0    50   ~ 0
 SRST1
-Text Label 4250 5250 0    50   ~ 0
-TCK1
-Text Label 4250 5350 0    50   ~ 0
-TMS1
 Text Label 4250 5450 0    50   ~ 0
-TD01
-Text Label 4250 5550 0    50   ~ 0
-TD11
+TCK1
 $Comp
 L Device:R R22
 U 1 1 5EA45BC4
@@ -589,4 +581,12 @@ F 3 "" H 9350 1450 50  0001 C CNN
 	1    9350 1450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4050 5450 4250 5450
+Text Label 4250 5250 0    50   ~ 0
+TD11
+Text Label 4250 5550 0    50   ~ 0
+TD01
+Text Label 4250 5350 0    50   ~ 0
+TMS1
 $EndSCHEMATC
