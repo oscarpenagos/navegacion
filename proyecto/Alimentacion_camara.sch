@@ -160,7 +160,7 @@ U 1 1 5EA5DE22
 P 9400 4450
 F 0 "R19" H 9470 4496 50  0000 L CNN
 F 1 "10K" H 9470 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 9330 4450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9330 4450 50  0001 C CNN
 F 3 "~" H 9400 4450 50  0001 C CNN
 	1    9400 4450
 	1    0    0    -1  
@@ -204,7 +204,7 @@ U 1 1 5EA56386
 P 8450 4700
 F 0 "L8" V 8650 4700 50  0000 C CNN
 F 1 "2.2uH" V 8550 4700 50  0000 C CNN
-F 2 "Inductor_SMD:L_2010_5025Metric" H 8450 4700 50  0001 C CNN
+F 2 "Inductor_SMD:L_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 8450 4700 50  0001 C CNN
 F 3 "~" H 8450 4700 50  0001 C CNN
 	1    8450 4700
 	0    -1   -1   0   
@@ -226,7 +226,7 @@ U 1 1 5EA51C8A
 P 7600 5600
 F 0 "R18" H 7670 5646 50  0000 L CNN
 F 1 "180K" H 7670 5555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 7530 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 5600 50  0001 C CNN
 F 3 "~" H 7600 5600 50  0001 C CNN
 	1    7600 5600
 	1    0    0    -1  
@@ -237,7 +237,7 @@ U 1 1 5EA5113D
 P 7600 5100
 F 0 "R17" H 7670 5146 50  0000 L CNN
 F 1 "2M" H 7670 5055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 7530 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 5100 50  0001 C CNN
 F 3 "~" H 7600 5100 50  0001 C CNN
 	1    7600 5100
 	1    0    0    -1  
@@ -253,9 +253,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 8450 5300 50  0001 C CNN
 	1    8450 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 6300 4700
+Connection ~ 6200 4700
 Wire Wire Line
-	6650 4700 6300 4700
+	6650 4700 6200 4700
 $Comp
 L Device:Q_PMOS_DSG Q2
 U 1 1 5EA428FB
@@ -277,16 +277,12 @@ Wire Wire Line
 	5150 5250 5150 5350
 Connection ~ 5150 5250
 Wire Wire Line
-	6300 5250 5850 5250
+	6200 5250 5850 5250
 Wire Wire Line
-	6300 5100 6300 5250
-Wire Wire Line
-	5850 4700 6300 4700
+	5850 4700 6200 4700
 Connection ~ 5850 4700
 Wire Wire Line
 	5850 4800 5850 4700
-Wire Wire Line
-	6300 4700 6300 4800
 Wire Wire Line
 	5550 4700 5850 4700
 $Comp
@@ -302,17 +298,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22036b.pdf" H 4900 5050 50 
 $EndComp
 Wire Wire Line
 	5150 4500 5150 4350
-$Comp
-L Device:Battery_Cell BT2
-U 1 1 5EA3E896
-P 6300 5000
-F 0 "BT2" H 6350 4950 50  0000 L CNN
-F 1 "Battery_Cell_2" H 6350 4850 50  0000 L CNN
-F 2 "Battery:Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles" V 6300 5060 50  0001 C CNN
-F 3 "~" V 6300 5060 50  0001 C CNN
-	1    6300 5000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C24
 U 1 1 5EA3CD6D
@@ -354,7 +339,7 @@ U 1 1 5EA375D2
 P 4350 4900
 F 0 "R16" V 4143 4900 50  0000 C CNN
 F 1 "10K" V 4234 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 4280 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4280 4900 50  0001 C CNN
 F 3 "~" H 4350 4900 50  0001 C CNN
 	1    4350 4900
 	0    1    1    0   
@@ -688,4 +673,17 @@ $EndComp
 Wire Wire Line
 	3400 2200 2800 2200
 Connection ~ 3400 2200
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5ECF7F80
+P 6400 5150
+F 0 "J10" H 6480 5142 50  0000 L CNN
+F 1 "Conn_01x02" H 6480 5051 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 6400 5150 50  0001 C CNN
+F 3 "~" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4700 6200 5150
 $EndSCHEMATC

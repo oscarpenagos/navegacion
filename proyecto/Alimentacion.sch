@@ -441,7 +441,7 @@ AR Path="/5EA3D59C/5EA9748F" Ref="R?"  Part="1"
 AR Path="/5E9BC166/5EA9748F" Ref="R11"  Part="1" 
 F 0 "R11" H 8870 4446 50  0000 L CNN
 F 1 "10K" H 8870 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 8730 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8730 4400 50  0001 C CNN
 F 3 "~" H 8800 4400 50  0001 C CNN
 	1    8800 4400
 	1    0    0    -1  
@@ -480,7 +480,7 @@ AR Path="/5EA3D59C/5EA97477" Ref="L?"  Part="1"
 AR Path="/5E9BC166/5EA97477" Ref="L4"  Part="1" 
 F 0 "L4" V 8050 4650 50  0000 C CNN
 F 1 "2.2uH" V 7950 4650 50  0000 C CNN
-F 2 "Inductor_SMD:L_2010_5025Metric" H 7850 4650 50  0001 C CNN
+F 2 "Inductor_SMD:L_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 7850 4650 50  0001 C CNN
 F 3 "~" H 7850 4650 50  0001 C CNN
 	1    7850 4650
 	0    -1   -1   0   
@@ -506,7 +506,7 @@ AR Path="/5EA3D59C/5EA9746B" Ref="R?"  Part="1"
 AR Path="/5E9BC166/5EA9746B" Ref="R10"  Part="1" 
 F 0 "R10" H 7070 5596 50  0000 L CNN
 F 1 "180K" H 7070 5505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 6930 5550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 5550 50  0001 C CNN
 F 3 "~" H 7000 5550 50  0001 C CNN
 	1    7000 5550
 	1    0    0    -1  
@@ -519,7 +519,7 @@ AR Path="/5EA3D59C/5EA97465" Ref="R?"  Part="1"
 AR Path="/5E9BC166/5EA97465" Ref="R9"  Part="1" 
 F 0 "R9" H 7070 5096 50  0000 L CNN
 F 1 "2M" H 7070 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 6930 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 5050 50  0001 C CNN
 F 3 "~" H 7000 5050 50  0001 C CNN
 	1    7000 5050
 	1    0    0    -1  
@@ -553,7 +553,6 @@ F 3 "~" H 6250 4550 50  0001 C CNN
 	1    6250 4550
 	0    1    1    0   
 $EndComp
-NoConn ~ 4550 4900
 Wire Wire Line
 	5250 5200 4550 5200
 Connection ~ 5250 5200
@@ -561,18 +560,13 @@ Wire Wire Line
 	5250 5050 5250 5200
 Wire Wire Line
 	4550 5200 4550 5300
-Connection ~ 4550 5200
 Wire Wire Line
 	5700 5200 5250 5200
-Wire Wire Line
-	5700 5050 5700 5200
 Wire Wire Line
 	5250 4650 5700 4650
 Connection ~ 5250 4650
 Wire Wire Line
 	5250 4750 5250 4650
-Wire Wire Line
-	5700 4650 5700 4750
 Wire Wire Line
 	4950 4650 5250 4650
 $Comp
@@ -591,19 +585,6 @@ $EndComp
 Wire Wire Line
 	4550 4450 4550 4300
 $Comp
-L Device:Battery_Cell BT?
-U 1 1 5EA9743D
-P 5700 4950
-AR Path="/5EA3D59C/5EA9743D" Ref="BT?"  Part="1" 
-AR Path="/5E9BC166/5EA9743D" Ref="BT1"  Part="1" 
-F 0 "BT1" H 5750 4900 50  0000 L CNN
-F 1 "Battery_Cell_1" H 5750 4800 50  0000 L CNN
-F 2 "Battery:Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles" V 5700 5010 50  0001 C CNN
-F 3 "~" V 5700 5010 50  0001 C CNN
-	1    5700 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5EA97437
 P 5250 4900
@@ -616,8 +597,6 @@ F 3 "~" H 5250 4900 50  0001 C CNN
 	1    5250 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 5050 4550 5200
 Wire Wire Line
 	3300 4300 2800 4300
 Connection ~ 3300 4300
@@ -639,7 +618,7 @@ AR Path="/5EA3D59C/5EA97423" Ref="R?"  Part="1"
 AR Path="/5E9BC166/5EA97423" Ref="R8"  Part="1" 
 F 0 "R8" V 3543 4850 50  0000 C CNN
 F 1 "10K" V 3634 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 3680 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3680 4850 50  0001 C CNN
 F 3 "~" H 3750 4850 50  0001 C CNN
 	1    3750 4850
 	0    1    1    0   
@@ -746,4 +725,21 @@ F 3 "" H 8800 4650 50  0001 C CNN
 	1    8800 4650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4550 4900
+Wire Wire Line
+	4550 5050 4550 5200
+Connection ~ 4550 5200
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5ECEF3A0
+P 5900 5100
+F 0 "J9" H 5980 5092 50  0000 L CNN
+F 1 "Conn_01x02" H 5980 5001 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Horizontal" H 5900 5100 50  0001 C CNN
+F 3 "~" H 5900 5100 50  0001 C CNN
+	1    5900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4650 5700 5100
 $EndSCHEMATC
