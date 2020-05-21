@@ -59,7 +59,7 @@ AR Path="/5E9F954D/5EA368BC" Ref="SW?"  Part="1"
 AR Path="/5E9DF2DA/5EA368BC" Ref="SW2"  Part="1" 
 F 0 "SW2" V 8546 5352 50  0000 R CNN
 F 1 "SW_Push" V 8455 5352 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8500 5600 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8500 5600 50  0001 C CNN
 F 3 "~" H 8500 5600 50  0001 C CNN
 	1    8500 5400
 	0    -1   -1   0   
@@ -181,7 +181,7 @@ AR Path="/5E9F954D/5EA3ADF5" Ref="D?"  Part="1"
 AR Path="/5E9DF2DA/5EA3ADF5" Ref="D4"  Part="1" 
 F 0 "D4" V 2704 1479 50  0000 L CNN
 F 1 "1N47xxA" V 2795 1479 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2750 1225 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp" H 2750 1225 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 2750 1400 50  0001 C CNN
 	1    2750 1400
 	0    1    1    0   

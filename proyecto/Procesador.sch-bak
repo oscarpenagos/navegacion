@@ -136,7 +136,7 @@ AR Path="/5EA0EFF0" Ref="D?"  Part="1"
 AR Path="/5E9F954D/5EA0EFF0" Ref="D1"  Part="1" 
 F 0 "D1" V 2454 1279 50  0000 L CNN
 F 1 "1N47xxA" V 2545 1279 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 1025 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp" H 2500 1025 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 2500 1200 50  0001 C CNN
 	1    2500 1200
 	0    1    1    0   

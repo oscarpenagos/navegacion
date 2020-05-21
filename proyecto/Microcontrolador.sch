@@ -91,7 +91,7 @@ AR Path="/5EA1617B" Ref="SW?"  Part="1"
 AR Path="/5E9DF408/5EA1617B" Ref="SW3"  Part="1" 
 F 0 "SW3" V 8346 1852 50  0000 R CNN
 F 1 "SW_Push" V 8255 1852 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8300 2100 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8300 2100 50  0001 C CNN
 F 3 "~" H 8300 2100 50  0001 C CNN
 	1    8300 1900
 	0    -1   -1   0   
@@ -329,7 +329,7 @@ U 1 1 5EA3D14C
 P 5650 3650
 F 0 "Y1" H 5650 3421 50  0000 C CNN
 F 1 "24M" H 5650 3473 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-U_Horizontal" H 5650 3650 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 5650 3650 50  0001 C CNN
 F 3 "~" H 5650 3650 50  0001 C CNN
 	1    5650 3650
 	-1   0    0    1   
