@@ -214,25 +214,9 @@ RST_M
 Wire Wire Line
 	4050 2750 4400 2750
 Wire Wire Line
-	4250 5050 4050 5050
-Wire Wire Line
-	4050 5150 4250 5150
-Wire Wire Line
-	4250 5250 4050 5250
-Wire Wire Line
-	4050 5350 4250 5350
-Wire Wire Line
-	4250 5550 4050 5550
-Wire Wire Line
 	9150 1600 9350 1600
 Wire Wire Line
 	9350 1600 9350 1450
-Text Label 4250 5050 0    50   ~ 0
-TRST1
-Text Label 4250 5150 0    50   ~ 0
-SRST1
-Text Label 4250 5450 0    50   ~ 0
-TCK1
 Wire Notes Line
 	6950 3050 11250 3050
 Text Notes 7000 3000 0    50   ~ 0
@@ -250,14 +234,6 @@ F 3 "" H 9350 1450 50  0001 C CNN
 	1    9350 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 5450 4250 5450
-Text Label 4250 5250 0    50   ~ 0
-TD11
-Text Label 4250 5550 0    50   ~ 0
-TD01
-Text Label 4250 5350 0    50   ~ 0
-TMS1
 Wire Wire Line
 	5650 4300 5950 4300
 Connection ~ 5650 4300
@@ -432,4 +408,67 @@ Wire Wire Line
 	3350 1950 3450 1950
 Wire Notes Line
 	6950 3050 6950 450 
+$Comp
+L Device:LED D7
+U 1 1 5ECC6AF2
+P 2250 4250
+F 0 "D7" H 2243 4466 50  0000 C CNN
+F 1 "LED" H 2243 4375 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 4250 50  0001 C CNN
+F 3 "~" H 2250 4250 50  0001 C CNN
+	1    2250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5ECC7C9B
+P 1750 4250
+F 0 "R7" V 1543 4250 50  0000 C CNN
+F 1 "R" V 1634 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1680 4250 50  0001 C CNN
+F 3 "~" H 1750 4250 50  0001 C CNN
+	1    1750 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5ECCAB73
+P 1450 4250
+F 0 "#PWR0111" H 1450 4000 50  0001 C CNN
+F 1 "GND" V 1455 4122 50  0000 R CNN
+F 2 "" H 1450 4250 50  0001 C CNN
+F 3 "" H 1450 4250 50  0001 C CNN
+	1    1450 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4250 2400 4250
+Wire Wire Line
+	1450 4250 1600 4250
+Wire Wire Line
+	1900 4250 2100 4250
+Text HLabel 4350 5050 2    50   Input ~ 0
+TRST1
+Text HLabel 4350 5150 2    50   Input ~ 0
+SRST1
+Text HLabel 4350 5250 2    50   Input ~ 0
+TDI1
+Text HLabel 4350 5350 2    50   Input ~ 0
+TMS1
+Text HLabel 4350 5450 2    50   Input ~ 0
+TCK1
+Text HLabel 4350 5550 2    50   Input ~ 0
+TD01
+Wire Wire Line
+	4350 5550 4050 5550
+Wire Wire Line
+	4050 5450 4350 5450
+Wire Wire Line
+	4350 5350 4050 5350
+Wire Wire Line
+	4050 5250 4350 5250
+Wire Wire Line
+	4350 5150 4050 5150
+Wire Wire Line
+	4050 5050 4350 5050
 $EndSCHEMATC

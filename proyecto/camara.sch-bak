@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -59,7 +59,7 @@ AR Path="/5E9F954D/5EA368BC" Ref="SW?"  Part="1"
 AR Path="/5E9DF2DA/5EA368BC" Ref="SW2"  Part="1" 
 F 0 "SW2" V 8546 5352 50  0000 R CNN
 F 1 "SW_Push" V 8455 5352 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8500 5600 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8500 5600 50  0001 C CNN
 F 3 "~" H 8500 5600 50  0001 C CNN
 	1    8500 5400
 	0    -1   -1   0   
@@ -320,39 +320,6 @@ F 3 "" H 8850 5500 50  0001 C CNN
 	1    8850 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 2300 8000 2300
-Wire Wire Line
-	8000 2200 8300 2200
-Wire Wire Line
-	8300 2100 8000 2100
-Wire Wire Line
-	7500 3200 7500 3100
-Wire Wire Line
-	8000 2000 8300 2000
-Wire Wire Line
-	8000 1800 8300 1800
-Text Label 8300 2000 0    50   ~ 0
-TCK3
-Text Label 8300 2100 0    50   ~ 0
-TMS3
-Text Label 8300 2200 0    50   ~ 0
-TD03
-Text Label 8300 2300 0    50   ~ 0
-TD13
-$Comp
-L Device:R R?
-U 1 1 5EA69365
-P 7500 2950
-AR Path="/5E9DF408/5EA69365" Ref="R?"  Part="1" 
-AR Path="/5E9DF2DA/5EA69365" Ref="R15"  Part="1" 
-F 0 "R15" V 7293 2950 50  0001 C CNN
-F 1 "510" V 7385 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7430 2950 50  0001 C CNN
-F 3 "~" H 7500 2950 50  0001 C CNN
-	1    7500 2950
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GNDA #PWR0138
 U 1 1 5EA63E3E
@@ -378,45 +345,8 @@ Wire Wire Line
 	3300 7000 3600 7000
 Wire Wire Line
 	4100 5100 4000 5100
-$Comp
-L power:GNDA #PWR0140
-U 1 1 5EA8F42E
-P 7500 3200
-F 0 "#PWR0140" H 7500 2950 50  0001 C CNN
-F 1 "GNDA" H 7505 3027 50  0000 C CNN
-F 2 "" H 7500 3200 50  0001 C CNN
-F 3 "" H 7500 3200 50  0001 C CNN
-	1    7500 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 4900 2400 4900
-Wire Wire Line
-	2400 5000 2600 5000
-Wire Wire Line
-	2600 5100 2400 5100
-Wire Wire Line
-	2400 5200 2600 5200
-Wire Wire Line
-	2600 5300 2400 5300
-Wire Wire Line
-	2600 5400 2400 5400
-Text Label 2400 5400 2    50   ~ 0
-TD13
-Text Label 2400 5300 2    50   ~ 0
-TD03
-Text Label 2400 5200 2    50   ~ 0
-TMS3
-Text Label 2400 5100 2    50   ~ 0
-TCK3
-Text Label 2400 5000 2    50   ~ 0
-SRST3
-Text Label 2400 4900 2    50   ~ 0
-TRST3
 Wire Notes Line
 	5700 450  5700 7800
-Text Notes 5750 3500 0    50   ~ 0
-JTAG
 Text Notes 5750 7750 0    50   ~ 0
 RESET
 Text Notes 500  7750 0    50   ~ 0
@@ -535,110 +465,5 @@ F 3 "" H 3600 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	11200 3550 450  3550
-Wire Wire Line
-	8900 850  8900 1050
-Wire Wire Line
-	8650 1450 8650 1400
-Wire Wire Line
-	8900 1050 8650 1050
-Connection ~ 8650 1050
-Wire Wire Line
-	8650 1100 8650 1050
-$Comp
-L Device:C C?
-U 1 1 5EC6B22B
-P 8650 1250
-AR Path="/5EC6B22B" Ref="C?"  Part="1" 
-AR Path="/5E9F954D/5EC6B22B" Ref="C?"  Part="1" 
-AR Path="/5E9DF2DA/5EC6B22B" Ref="C35"  Part="1" 
-F 0 "C35" H 8765 1296 50  0000 L CNN
-F 1 "0.1uF" H 8765 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8688 1100 50  0001 C CNN
-F 3 "~" H 8650 1250 50  0001 C CNN
-	1    8650 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V0 #PWR0158
-U 1 1 5EC6B231
-P 8900 850
-F 0 "#PWR0158" H 8900 700 50  0001 C CNN
-F 1 "+3V0" H 8915 1023 50  0000 C CNN
-F 2 "" H 8900 850 50  0001 C CNN
-F 3 "" H 8900 850 50  0001 C CNN
-	1    8900 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 1450 8250 1400
-Wire Wire Line
-	8250 1100 8250 1050
-$Comp
-L Device:C C?
-U 1 1 5EC6E917
-P 8250 1250
-AR Path="/5EC6E917" Ref="C?"  Part="1" 
-AR Path="/5E9F954D/5EC6E917" Ref="C?"  Part="1" 
-AR Path="/5E9DF2DA/5EC6E917" Ref="C33"  Part="1" 
-F 0 "C33" H 8000 1300 50  0000 L CNN
-F 1 "0.1uF" H 7900 1200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8288 1100 50  0001 C CNN
-F 3 "~" H 8250 1250 50  0001 C CNN
-	1    8250 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 1050 7500 1500
-Wire Wire Line
-	7500 1050 8250 1050
-Wire Wire Line
-	7400 1500 7400 1050
-Wire Wire Line
-	7400 1050 7500 1050
-Connection ~ 7500 1050
-Connection ~ 8250 1050
-Wire Wire Line
-	8250 1050 8650 1050
-$Comp
-L Connector:AVR-JTAG-10 J7
-U 1 1 5EC90AF4
-P 7500 2100
-F 0 "J7" H 7070 2146 50  0000 R CNN
-F 1 "AVR-JTAG-10" H 7070 2055 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" V 7350 2250 50  0001 C CNN
-F 3 " ~" H 6225 1550 50  0001 C CNN
-	1    7500 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 2800 7500 2700
-$Comp
-L power:GNDA #PWR0161
-U 1 1 5EC6E91D
-P 8250 1450
-F 0 "#PWR0161" H 8250 1200 50  0001 C CNN
-F 1 "GNDA" H 8255 1277 50  0000 C CNN
-F 2 "" H 8250 1450 50  0001 C CNN
-F 3 "" H 8250 1450 50  0001 C CNN
-	1    8250 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0159
-U 1 1 5EC6B237
-P 8650 1450
-F 0 "#PWR0159" H 8650 1200 50  0001 C CNN
-F 1 "GNDA" H 8655 1277 50  0000 C CNN
-F 2 "" H 8650 1450 50  0001 C CNN
-F 3 "" H 8650 1450 50  0001 C CNN
-	1    8650 1450
-	1    0    0    -1  
-$EndComp
-Text Label 8300 1800 0    50   ~ 0
-SRST3
-Text Label 8300 1900 0    50   ~ 0
-TRST3
-Wire Wire Line
-	8000 1900 8300 1900
+	450  3550 5700 3550
 $EndSCHEMATC

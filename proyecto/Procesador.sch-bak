@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -262,33 +262,9 @@ F 3 "" H 4000 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 800  4000 950 
-Text Label 2200 4650 2    50   ~ 0
-TRST2
-Text Label 2200 4750 2    50   ~ 0
-SRST2
-Text Label 2200 4850 2    50   ~ 0
-TCK2
-Text Label 2200 4950 2    50   ~ 0
-TMS2
-Text Label 2200 5050 2    50   ~ 0
-TD02
-Text Label 2200 5150 2    50   ~ 0
-TD12
 Connection ~ 3800 3800
 Wire Wire Line
 	3800 3600 3800 3800
-Wire Wire Line
-	2400 5150 2200 5150
-Wire Wire Line
-	2400 5050 2200 5050
-Wire Wire Line
-	2200 4950 2400 4950
-Wire Wire Line
-	2400 4850 2200 4850
-Wire Wire Line
-	2200 4750 2400 4750
-Wire Wire Line
-	2400 4650 2200 4650
 Text Label 2250 6450 2    50   ~ 0
 USB_D+
 Text Label 2250 6350 2    50   ~ 0
@@ -430,7 +406,7 @@ AR Path="/5EA12D8E" Ref="SW?"  Part="1"
 AR Path="/5E9F954D/5EA12D8E" Ref="SW1"  Part="1" 
 F 0 "SW1" V 8446 1852 50  0000 R CNN
 F 1 "SW_Push" V 8355 1852 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 8400 2100 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8400 2100 50  0001 C CNN
 F 3 "~" H 8400 2100 50  0001 C CNN
 	1    8400 1900
 	0    -1   -1   0   
@@ -483,8 +459,6 @@ F 3 "~" H 9100 1600 50  0001 C CNN
 	1    9100 1600
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	6950 7800 6950 3100
 Wire Bus Line
 	6950 3100 6950 450 
 Connection ~ 6950 3100
@@ -554,134 +528,6 @@ F 3 "" H 3800 3600 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	6950 3100 11200 3100
-Connection ~ 9400 3800
-Wire Wire Line
-	9400 3600 9400 3800
-Wire Wire Line
-	9400 4150 9150 4150
-Connection ~ 9400 4150
-Wire Wire Line
-	9400 4250 9400 4150
-$Comp
-L power:GND #PWR?
-U 1 1 5ECBDFEF
-P 9400 4250
-AR Path="/5ECBDFEF" Ref="#PWR?"  Part="1" 
-AR Path="/5E9F954D/5ECBDFEF" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 9400 4000 50  0001 C CNN
-F 1 "GND" H 9405 4077 50  0000 C CNN
-F 2 "" H 9400 4250 50  0001 C CNN
-F 3 "" H 9400 4250 50  0001 C CNN
-	1    9400 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 3800 9150 3800
-Wire Wire Line
-	9400 3850 9400 3800
-Wire Wire Line
-	9150 3800 8700 3800
-Connection ~ 9150 3800
-Wire Wire Line
-	9150 3850 9150 3800
-$Comp
-L Device:C C?
-U 1 1 5ECBDFFB
-P 9150 4000
-AR Path="/5ECBDFFB" Ref="C?"  Part="1" 
-AR Path="/5E9F954D/5ECBDFFB" Ref="C18"  Part="1" 
-F 0 "C18" H 8950 4050 50  0000 L CNN
-F 1 "0.1uF" H 8950 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9188 3850 50  0001 C CNN
-F 3 "~" H 9150 4000 50  0001 C CNN
-	1    9150 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5ECBE001
-P 9400 4000
-AR Path="/5ECBE001" Ref="C?"  Part="1" 
-AR Path="/5E9F954D/5ECBE001" Ref="C32"  Part="1" 
-F 0 "C32" H 9515 4046 50  0000 L CNN
-F 1 "0.1uF" H 9515 3955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9438 3850 50  0001 C CNN
-F 3 "~" H 9400 4000 50  0001 C CNN
-	1    9400 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V8 #PWR0141
-U 1 1 5ECBE007
-P 9400 3600
-F 0 "#PWR0141" H 9400 3450 50  0001 C CNN
-F 1 "+3V8" H 9415 3773 50  0000 C CNN
-F 2 "" H 9400 3600 50  0001 C CNN
-F 3 "" H 9400 3600 50  0001 C CNN
-	1    9400 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 5050 9200 5050
-Wire Wire Line
-	9200 4950 9500 4950
-Wire Wire Line
-	9500 4850 9200 4850
-Wire Wire Line
-	9200 4650 9500 4650
-$Comp
-L power:GND #PWR?
-U 1 1 5EA20F46
-P 8700 5950
-AR Path="/5E9DF408/5EA20F46" Ref="#PWR?"  Part="1" 
-AR Path="/5E9F954D/5EA20F46" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 8700 5700 50  0001 C CNN
-F 1 "GND" H 8705 5777 50  0000 C CNN
-F 2 "" H 8700 5950 50  0001 C CNN
-F 3 "" H 8700 5950 50  0001 C CNN
-	1    8700 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 5950 8700 5850
-$Comp
-L Device:R R?
-U 1 1 5EA20F58
-P 8700 5700
-AR Path="/5E9DF408/5EA20F58" Ref="R?"  Part="1" 
-AR Path="/5E9F954D/5EA20F58" Ref="R7"  Part="1" 
-F 0 "R7" V 8493 5700 50  0001 C CNN
-F 1 "510" V 8585 5700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 5700 50  0001 C CNN
-F 3 "~" H 8700 5700 50  0001 C CNN
-	1    8700 5700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9200 4750 9500 4750
-Wire Wire Line
-	9200 4550 9500 4550
-Wire Wire Line
-	8700 5450 8700 5550
-Text Label 9500 4650 0    50   ~ 0
-TRST2
-Text Label 9500 4550 0    50   ~ 0
-SRST2
-Text Label 9500 4750 0    50   ~ 0
-TCK2
-Text Label 9500 4850 0    50   ~ 0
-TMS2
-Text Label 9500 4950 0    50   ~ 0
-TD02
-Text Label 9500 5050 0    50   ~ 0
-TD12
-Wire Wire Line
-	8600 4250 8600 3800
-Wire Wire Line
-	8700 4250 8700 3800
-Connection ~ 8700 3800
-Wire Wire Line
-	8700 3800 8600 3800
 $Comp
 L Device:R R25
 U 1 1 5ED17152
@@ -757,15 +603,28 @@ Wire Wire Line
 	4250 4850 4200 4850
 Wire Wire Line
 	3800 4850 3900 4850
-$Comp
-L Connector:AVR-JTAG-10 J4
-U 1 1 5EC5E132
-P 8700 4850
-F 0 "J4" H 8270 4896 50  0000 R CNN
-F 1 "AVR-JTAG-10" H 8270 4805 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" V 8550 5000 50  0001 C CNN
-F 3 " ~" H 7425 4300 50  0001 C CNN
-	1    8700 4850
-	1    0    0    -1  
-$EndComp
+Text HLabel 2250 4650 0    50   Input ~ 0
+TRST1
+Text HLabel 2250 4750 0    50   Input ~ 0
+SRST1
+Text HLabel 2250 4850 0    50   Input ~ 0
+TCK1
+Text HLabel 2250 4950 0    50   Input ~ 0
+TMS1
+Text HLabel 2250 5050 0    50   Input ~ 0
+TD01
+Text HLabel 2250 5150 0    50   Input ~ 0
+TDI1
+Wire Wire Line
+	2400 4650 2250 4650
+Wire Wire Line
+	2250 4750 2400 4750
+Wire Wire Line
+	2250 4850 2400 4850
+Wire Wire Line
+	2400 4950 2250 4950
+Wire Wire Line
+	2250 5050 2400 5050
+Wire Wire Line
+	2400 5150 2250 5150
 $EndSCHEMATC
